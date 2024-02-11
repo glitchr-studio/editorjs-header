@@ -173,7 +173,7 @@ export default class Header {
    */
   save(toolsContent) {
     return {
-      text: toolsContent.innerHTML.replace(/&nbsp;/g,' '),
+      text: toolsContent.innerHTML,
       level: this.currentLevel.number,
     };
   }
